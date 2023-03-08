@@ -1,0 +1,353 @@
+@import url('https://fonts.googleapis.com/css2? family= Krona+One & family= Red+Hat+Display:wght@300;400;700;900 & display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Red+Hat+Display:wght@300;400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Red+Hat+Display:wght@300;400;700;900&display=swap');
+
+:root{
+    --cor-fundo: #fff;
+    --cor-fundo-dois: #609966;
+    --cor-fonte-menu: #fff;
+    --cor-fonte: #000;
+    --cor-fonte-destaque: #006400;
+
+    --fonte-primaria:'Krona One', sans-serif;
+    --font-secundaria:'Montserrat', sans-serif;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: var(--cor-fundo);
+    color: var(--cor-fonte);
+    height: 100vh;
+    overflow: hidden;
+    font-family: var(--font-secundaria);
+}
+
+.cabecalho{
+    background-color: var(--cor-fundo-dois);
+    color: var(--cor-fonte-menu);
+    padding: 1% 13% 1% 9%;
+    display: flex;
+}
+
+.cabecalho_menu{
+    text-align: center;
+    font-family: var(--font-secundaria);
+    font-size: 1.3rem;
+}
+
+.cabecalho_menu_link{
+    padding-left: 30px;
+}
+
+.apresentacao_destaque{
+    padding-top: 45px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+.apresentacao_destaque_titulo{
+    font-family: var(--fonte-primaria);
+    font-size: 1.8rem;
+    color: var(--cor-fonte-destaque);
+}
+
+.apresentacao_destaque_texto{
+    font-family: var(--font-secundaria);
+    color: var(--cor-fonte);
+    font-size: 1.2rem;
+}
+
+.img_home{
+    margin: auto;
+    display: block;
+    margin-top: 4%;
+}
+.img_carrinho{
+    padding: 0% 0% 3.4% 0%;
+}
+
+.apresentacao_dois{
+    padding-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    margin-top: 5%;
+}
+
+.apresentacao_dois_titulo{
+    color: var(--cor-fonte-destaque);
+    font-size: 1.8rem;
+    font-family: var(--fonte-primaria);
+}
+
+.apresentacao_dois_texto{
+    font-family: var(--font-secundaria);
+    color: var(--cor-fonte);
+    font-size: 1.2rem;
+}
+
+.apresentacao_texto_sobre{
+    text-align: center;
+    margin: 7% 20%;
+    margin-bottom: 12.15%;
+
+}
+
+.card{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 4em;
+
+}
+
+.card_one{
+    position: relative;
+    width: 320px;
+    height: 420px;
+    background: var(--cor-fundo);
+    border-radius: 20px;
+    box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.25);
+
+}
+
+.card_produto{
+    color: var(--cor-fonte-destaque);
+    font-size: 24px;
+    text-align: center;
+    padding-top: 1em;
+    margin-bottom: 0.5em;
+}
+
+.card_preco{
+    text-align: center;
+    margin-bottom: 1.5em;
+    font-size: 24px;
+    color: var(--cor-fonte-destaque);
+}
+
+.card_button{
+    background: var(--cor-fundo-dois);
+    text-align: center;
+    margin-left: 3em;
+    padding: 1em 5em;
+    border-radius: 15px;
+    transition: 1s all;
+}
+
+.card_button:hover{
+    background: var(--cor-fonte-destaque);
+}
+
+.img_muda{
+    width: 50%;
+    padding-top:3em;
+    padding-left: 5em;
+}
+
+.apresentacao_contato{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 9em;
+    margin-bottom: 17.1em;
+}
+
+.apresentacao_contato_texto{
+    font-weight: bold;
+    padding-bottom: 0.1em;
+}
+
+.apresentacao_conteudo_texto_link{
+    color: #F58529;
+    text-decoration: none;
+}
+
+.rodape{
+    text-align: center;
+    background-color: var(--cor-fundo-dois);
+    width: 100%;
+    padding: 0.72% 0 ;
+    color: var(--cor-fonte-menu);
+    font-family: var(--font-secundaria);
+    margin-top: 0%;
+}
+
+.rodape__sobre{
+    padding: 0.59%;
+}
+
+.rodape_home{
+    margin-top: 3.1%;
+}
+
+.cabecalho_menu_link, a{
+    text-decoration: none;
+    color: var(--cor-fonte-menu);
+}
+.cabecalho_menu_link:hover{
+    color: var(--cor-fonte-destaque);
+    font-weight: 900;
+}
+
+.rodape__produtos{
+    margin-top: 3%;
+}
+
+@media screen and (max-width: 768px) {
+
+    body{
+        overflow: scroll;
+    }
+
+.cabecalho{
+    padding: 3% 2% 3% 2%;
+}
+
+.cabecalho_menu{
+    font-size: 0.9rem;
+}
+
+.cabecalho_menu_link{
+    display: inline-flex;
+    padding: 3.42px;
+}
+
+.apresentacao_destaque{
+    padding-top: 25px;
+    gap: 5px;
+}
+
+.apresentacao_destaque_titulo{
+    font-size: 1.5rem;
+}
+
+.apresentacao_destaque_texto{
+    font-size: 1rem;
+}
+
+.apresentacao_dois{
+    margin-top: 25%;
+    text-align: center;
+}
+
+.apresentacao_dois_titulo{
+    font-size: 1rem;
+}
+
+.apresentacao_dois_texto{
+    padding-top: 3px;
+    font-size: 1rem;
+}
+
+.apresentacao_texto_sobre{
+    margin: 9% 2.80%;
+}
+.apresentacao_texto_sobre{
+    margin-bottom: 7.6em;
+}
+
+.img_home{
+    margin-top: 15%;
+}
+
+.img_carrinho{
+    padding: 0%;
+}
+
+.card{
+    display: flex;
+    margin-top: 4em;
+    align-items: center;
+    margin-top: 7em;
+    margin-bottom: 8.8em;
+
+}
+
+.card_one{
+    position: relative;
+    width: 130px;
+    height: 200px;
+    background: var(--cor-fundo);
+    border-radius: 20px;
+    box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.25);
+
+}
+
+.card_produto{
+    color: var(--cor-fonte-destaque);
+    font-size: 18px;
+    text-align: center;
+    padding-top: 0.5em;
+    margin-bottom: 0.3em;
+}
+
+.card_preco{
+    text-align: center;
+    margin-bottom: 0.7em;
+    font-size: 18px;
+    color: var(--cor-fonte-destaque);
+}
+
+.card_button{
+    background: var(--cor-fundo-dois);
+    text-align: center;
+    margin-left: 1em;
+    padding: 0.5em 1em;
+    border-radius: 15px;
+    transition: 1s all;
+}
+
+.card_button:hover{
+    background: var(--cor-fonte-destaque);
+}
+
+.img_muda{
+    width: 50%;
+    padding-top:1em;
+    padding-left: 2em;
+}
+
+.apresentacao_contato{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 9em;
+    margin-bottom: 11.7em;
+}
+
+.rodape{
+    padding: 0% 0%;
+    margin-top: 27.5%;
+}
+
+.rodape_home{
+    margin-top: -8%;
+}
+
+.rodape__titulo{
+    padding-top: 10px;
+    font-size: 17px;
+    margin-bottom: 0.5em;
+}
+
+.rodape__texto{
+    margin: 0;
+    padding-bottom: 10px;
+}
+
+.rodape__sobre{
+    margin-top: -12%;
+}
+
+.rodape__produtos{
+    margin-top: 0%;
+}
+
+}
